@@ -1,0 +1,25 @@
+---
+applications:
+  - name: pcf-metrics-tracing-demo-frontend
+    random-route: true
+    path: frontend/target/pcf-metrics-tracing-demo-frontend.jar
+    services:
+      - service-registry
+
+  - name: pcf-metrics-tracing-demo-service-a
+    random-route: true
+    path: service-a/target/pcf-metrics-tracing-demo-service-a.jar
+    services:
+      - service-registry
+
+  - name: pcf-metrics-tracing-demo-service-b
+    random-route: true
+    path: service-b/target/pcf-metrics-tracing-demo-service-b.jar
+    services:
+      - service-registry
+
+  - name: pcf-metrics-tracing-demo-service-c
+    random-route: true
+    path: service-c/target/pcf-metrics-tracing-demo-service-c.jar
+    services:
+      - service-registry
